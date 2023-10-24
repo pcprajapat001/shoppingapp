@@ -2,7 +2,7 @@ import React from "react";
 import { Card, CardContent, Grid, Button } from "@mui/material";
 import { navData } from "./navData";
 import { Link } from "react-router-dom";
-
+    
 export const Nav=()=>{
     return(
         <Card sx={{marginBottom: 3}}>

@@ -5,7 +5,7 @@ export const navData=[
         label : "AddUser"
     },
     {
-        path : "/showuser",
+        path : "/showuser",   
         xs: 3 ,
         label : "ShowUser"
     }

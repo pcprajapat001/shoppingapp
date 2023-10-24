@@ -10,7 +10,7 @@ export const Landing=()=>{
         <Nav />
             <Routes>
                 <Route path="/" element={<AddUser />} />
-                <Route path="/showuser" element={<ShowUser />} />
+                <Route path="/showuser" element={<ShowUser />} />   
             </Routes>
         </BrowserRouter>
     );

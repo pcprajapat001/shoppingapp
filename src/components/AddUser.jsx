@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import axios from "axios";
-import { Grid, TextField, Button, Alert } from "@mui/material";
+import { Grid, TextField, Button} from "@mui/material";
 
 export const AddUser=()=>{
     const [fname,setFname]=useState("");

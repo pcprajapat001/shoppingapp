@@ -11,7 +11,7 @@ export const ShowUser=()=>{
     };
 
     useEffect(()=>{
-        getApi();
+        getApi();      
     },[]);
     return(
         <Grid container spacing={3}>
