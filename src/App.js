@@ -1,14 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import { Landing } from './components/Landing';
-
+import logo from "./logo.svg";
+import "./App.css";
+import { Landing } from "./components/Landing";
+import { Card, CardContent } from "@mui/material";
 
 function App() {
   return (
-    <div className="App">
-      <h2>User Details</h2>
-      <Landing />
-    </div>  
+    <Card>
+      <CardContent>
+        <div className="App">
+          <Landing />
+        </div>
+      </CardContent>
+    </Card>
   );
 }
 

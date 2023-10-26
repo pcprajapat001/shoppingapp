@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { Grid, TextField, Button, Typography } from "@mui/material";
 
-export const AddUser = () => {
+export const AddAdmin = () => {
   // State variables to hold user information
   const [fname, setFname] = useState("");
   const [lname, setLname] = useState("");
@@ -16,7 +16,7 @@ export const AddUser = () => {
     const payload = { fname, lname, email, age, phone };
 
     // Send a POST request to the server with the user data
-    const result = axios.post("http://localhost:4030/addusers", payload);
+    const result = axios.post("http://localhost:4030/addadmins", payload);
 
     // Clear the input fields after submission
     setFname("");
@@ -30,7 +30,7 @@ export const AddUser = () => {
     <Grid container spacing={3}>
       <Grid item xs={12}>
         <Typography variant="h4" align="center">
-          Add User
+          Add Admin
         </Typography>
       </Grid>
       <Grid item xs={4}></Grid>

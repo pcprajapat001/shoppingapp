@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Grid, Card, CardContent, Typography } from "@mui/material";
 
-export const ShowUser = () => {
+export const ShowAdmin = () => {
   const [data, setData] = useState([]);
 
   const getApi = async () => {
-    const result = await axios.get("http://localhost:4030/showusers");
+    const result = await axios.get("http://localhost:4030/showadmins");
     setData(result.data);
   };
 
@@ -17,7 +17,7 @@ export const ShowUser = () => {
     <Grid container spacing={3}>
       <Grid item xs={12}>
         <Typography variant="h4" align="center">
-          Show User
+          Show Admin
         </Typography>
       </Grid>
       {data.map((item) => {
